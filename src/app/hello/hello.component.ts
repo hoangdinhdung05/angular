@@ -1,10 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-hello',
-  templateUrl: './hello.component.html', //có thể viết template luôn: `Hello`
-  styleUrls: ['./hello.component.css']
+  template: `<h1>Hello {{ name }} </h1>`,
+  styles: [`h1 {color: red;}`]
 })
 export class HelloComponent {
+  @Input() name: string = '';   // <- đây là Input
 
+  ngOnInit() {
+    console.log("Hello init");
+  }
+
+  ngOnDestroy() {
+    console.log("Hello destroy");
+  }
 }
