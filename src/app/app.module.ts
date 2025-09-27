@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
 import { HiComponent } from './hi/hi.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   //Typescript Decorator: cung cấp metadata
@@ -16,7 +17,8 @@ import { HiComponent } from './hi/hi.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent] //Là một trong những block chính của dự án

@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular_crud';
+
+  name = "TEE"
+
+
+  //Data binding
+  //Event binding
+  handler() {
+    console.log("Click")
+  }
+
+  //Kết hợp data binding + Event binding
+
+  user = {
+    name: "Hoang Dung",
+    age: 20
+  }
 }

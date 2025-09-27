@@ -1,1 +1,26 @@
-<app-hello></app-hello>
+{{ name }}
+
+<p>
+    Coding 
+</p>
+
+<!-- Cách xuất dữ liệu -->
+
+<!-- {{ expression }} -->
+<p> {{ user.name }} </p>
+<p> {{ user.age }} </p>
+
+<!-- Dom -->
+<!-- HTMLInputElement {
+    type: text,
+    value: "czxds",
+    attribute: [],
+    ...
+} -->
+<input type="text" [value]="user.age" name="" id=""> 
+
+<!-- Event binding -->
+<button type="button" (click)="handler()">ClickMe</button>
+
+<!-- <input type="text" name="" id="" [(ngModel)]="name"> -->
+<input type="text" [ngModel]="name" (ngModelChange)="name = $event">
