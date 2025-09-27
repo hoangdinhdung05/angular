@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 @NgModule({
+  //Typescript Decorator: cung cấp metadata
   declarations: [
     AppComponent
   ],
@@ -14,5 +15,9 @@ import { AppComponent } from './app.component';
   ],
   providers: [],
   bootstrap: [AppComponent]
+  //Các thuộc tính này liên quan mật thiết với AppModule
 })
 export class AppModule { }
+
+
+//TypeScript Module
