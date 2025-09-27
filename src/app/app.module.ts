@@ -3,18 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HelloComponent } from './hello/hello.component';
+import { HiComponent } from './hi/hi.component';
 
 @NgModule({
   //Typescript Decorator: cung cấp metadata
   declarations: [
-    AppComponent
+    AppComponent,
+    //Khai báo component
+    HelloComponent,
+    HiComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent] //Là một trong những block chính của dự án
   //Các thuộc tính này liên quan mật thiết với AppModule
 })
 export class AppModule { }
