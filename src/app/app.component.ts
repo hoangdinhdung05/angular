@@ -246,4 +246,7 @@ export class AppComponent {
       }
     }
   ]
+
+  currentProgress = 0;
+
 }

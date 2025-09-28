@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
 import { HiComponent } from './hi/hi.component';
 import { FormsModule } from '@angular/forms';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 
 @NgModule({
   //Typescript Decorator: cung cấp metadata
@@ -13,7 +14,8 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     //Khai báo component
     HelloComponent,
-    HiComponent
+    HiComponent,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,7 @@ import { FormsModule } from '@angular/forms';
   bootstrap: [AppComponent] //Là một trong những block chính của dự án
   //Các thuộc tính này liên quan mật thiết với AppModule
 })
-export class AppModule { }
+export class AppModule {}
 
 
 //TypeScript Module
