@@ -1,1 +1,37 @@
-<p>hi works!</p>
+<button (click)="isDanger = !isDanger">Toggle Danger</button>
+<br>
+<button (click)="isWarning = !isWarning">Toggle Warring</button>
+
+<!-- <div class="box" [class.red-border]="isDanger" [class.yellow-background]="isWarning"></div> -->
+
+
+<!-- 
+
+    - [class.ten-class]
+    - [class]="array"
+    - [class]="Object"
+    - [class]=variable
+
+ -->
+<div class="box" [class]="{'red-border': isDanger, 'yellow-background': isWarning}"></div>
+<div [class]="classes"></div>
+
+<!-- Style binding -->
+<!-- 
+
+    - [style.tenStyle]
+    - [style.ten-style]
+    - [style.tenStyle.unit]
+    - [style]="object"
+
+ -->
+<p style="color: red;">hi works!</p>
+<p [style.--text-color]="isDanger ? 'red' : 'blue'" [style.color]="'red'" [style.background.color]="'yellow'" [style.fontSize.px]="'200'">hi works!</p>
+<p [style]="{
+      'color': 'red',
+      'background-color': 'yellow',
+      'font-size.px': 20
+    }">
+  hi works!
+</p>
+

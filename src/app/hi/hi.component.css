@@ -1,0 +1,19 @@
+.box {
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+  border: 2px solid black; /* border mặc định */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.red-border {
+  border: 3px solid red;
+}
+
+.yellow-background {
+  background-color: yellow;
+}

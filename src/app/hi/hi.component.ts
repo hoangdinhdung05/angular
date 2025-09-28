@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class HiComponent {
 
+  isDanger = false;
+  isWarning = false;
+  classes = "box red-border yellow-background";
+
 }
