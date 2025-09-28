@@ -7,6 +7,8 @@ import { HelloComponent } from './hello/hello.component';
 import { HiComponent } from './hi/hi.component';
 import { FormsModule } from '@angular/forms';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import {AuthorsDetailsComponent} from "./authors/authors-details.component";
+import {AuthorsListComponent} from "./authors/authors-list.component";
 
 @NgModule({
   //Typescript Decorator: cung cấp metadata
@@ -15,7 +17,9 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
     //Khai báo component
     HelloComponent,
     HiComponent,
-    ProgressBarComponent
+    ProgressBarComponent,
+    AuthorsDetailsComponent,
+    AuthorsListComponent
   ],
   imports: [
     BrowserModule,
