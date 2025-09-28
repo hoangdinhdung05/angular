@@ -1,1 +1,9 @@
-<author-list></author-list>
+<p>{{name}}</p>
+<!--Data + Event binding-->
+<input type="text" [(ngModel)]="name">
+
+<input type="text" [ngModel]="name" (ngModelChange)="name = $event">
+
+<br>
+
+<toggle></toggle>

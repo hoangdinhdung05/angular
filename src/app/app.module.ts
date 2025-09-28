@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import {AuthorsDetailsComponent} from "./authors/authors-details.component";
 import {AuthorsListComponent} from "./authors/authors-list.component";
+import {ToggleComponent} from "./toggle.component";
 
 @NgModule({
   //Typescript Decorator: cung cấp metadata
@@ -24,7 +25,8 @@ import {AuthorsListComponent} from "./authors/authors-list.component";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ToggleComponent
   ],
   providers: [],
   bootstrap: [AppComponent] //Là một trong những block chính của dự án
